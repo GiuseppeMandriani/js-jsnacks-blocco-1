@@ -22,29 +22,38 @@ Esegui questo programma in due versioni, con il for e con il while*/
 
 // Richiesta ad utente numero per 5 volte ciclo WHILE
 
-var size = 5;
-var somma = 0;
-var counter = 1;
+// var size = 5;
+// var somma = 0;
+// var counter = 1;
 
-while (counter <= size){
-     var number = parseInt(prompt('Inserisci numero ' + counter + ' di ' + size ));
-     somma += number;
-     counter++;
+// while (counter <= size){
+//      var number = parseInt(prompt('Inserisci numero ' + counter + ' di ' + size ));
+//      somma += number;
+//      counter++;
 
-}
-console.log('La somma dei numeri inseriti è: ', somma);
-
-
-
-
-
-
+// }
+// console.log('La somma dei numeri inseriti è: ', somma);
 
 
 
 /*
 Snack 2
 Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo*/
+
+// Richiesta numero
+
+// var number = parseInt(prompt('Inserire un numero')); 
+
+// while(isNaN(number)){
+//     number = parseInt(prompt('Prego inserire un numero')); // Verifico numero
+// }
+
+// if (number % 2 === 0){
+//     console.log('Numero Pari, il numero inserito è: ', number);
+// } else {
+//     console.log('Numero inserito dispari, il suo successivo è: ', ++number);
+// }
+
 
 
 
