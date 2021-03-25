@@ -34,7 +34,7 @@ Esegui questo programma in due versioni, con il for e con il while*/
 // }
 // console.log('La somma dei numeri inseriti è: ', somma);
 
-
+/*********************************************************************************************** */
 
 /*
 Snack 2
@@ -55,12 +55,39 @@ Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero
 // }
 
 
-
+/******************************************************************************************** */
 
 
 /*
 Snack 3
-Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.*/
+Generatore di “nomi e cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.*/
+
+// Creo liste di nomi e cognomi
+
+var nomi = ['giuseppe', 'michele', 'sara', 'pinco', 'davide'];
+var cognomi = ['mandriani', 'patruno', 'preziosa', 'vece', 'pallino'];
+var invitati = [];
+
+for (var i = 0; i < 3; i++){
+    // Generazione nomi random
+    var nomiRandom = Math.floor(Math.random() * nomi.length);
+    // console.log(nomiRandom);
+    
+
+    // Generazione cognomi Cognomi Random
+    var cognomiRandom = Math.floor(Math.random() * cognomi.length);
+    // console.log(cognomiRandom);
+
+    // Genero nuova variabile per combinazione e aggiungo alla lista di invitati
+    var fullName = nomi[nomiRandom] + ' ' + cognomi[cognomiRandom];
+
+    invitati.push(fullName);
+    
+}
+
+console.log(invitati); // Stampo lista di 3  nomi e cognomi random
+
+
 
 
 
