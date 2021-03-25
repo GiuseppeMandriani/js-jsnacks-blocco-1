@@ -117,3 +117,40 @@ Snack 5 - Bonus
 Crea due array di numeri che hanno un numero di elementi diversi.
 Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.*/
 
+// Creo array con lenght diversa
+
+var listOne = [2, 4, 6, 8, 9, 2, 1, 12];
+console.log('lunghezza array 1: ', listOne.length);
+
+var listTwo = [2, 2 , 2];
+console.log('lunghezza array 2: ', listTwo.length);
+
+
+if(listTwo.length < listOne.length){
+    do{
+        var numberRandom = Math.floor(Math.random() * 100 + 1);
+        listTwo.push(numberRandom);
+    } while(listTwo.length < listOne.length);
+    console.log('lunghezza array 1:', listOne.length);
+    console.log('componenti array 1: ', listOne)
+    console.log('lunghezza array 2: ', listTwo.length);
+    console.log('componenti array 2: ', listTwo)
+
+} else if(listTwo.length > listOne.length){
+    do{
+        var numberRandom = Math.floor(Math.random() * 100 + 1);
+        listOne.push(numberRandom);
+    } while(listOne.length < listTwo.length);
+    console.log('lunghezza array 1:', listOne.length);
+    console.log('componenti array 1: ', listOne)
+    console.log('lunghezza array 2: ', listTwo.length);
+    console.log('componenti array 2: ', listTwo)
+
+} else {
+    console.log("array stessa lunghezza")
+}
+
+
+
+
+
